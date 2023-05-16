@@ -1,17 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="stylesheet" type="text/css" href="form.css">
+  <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-
-<button id="myBtn">Sign Up</button>
 
 <div id="myModal" class="modal">
   <div class="modal-content">
     <span class="close">&times;</span>
-    <span id="error-label" class="error-label"></span>
-
     <h2>Sign Up</h2>
     <form>
       <label for="name">Name:</label>
@@ -22,15 +18,57 @@
       <input type="password" id="password" name="password" required><br><br>
       <label for="confirm-password">Confirm Password:</label>
       <input type="password" id="confirm-password" name="confirm-password" required><br><br>
+      <div class="checkbox-container">
+        <input type="checkbox" id="terms" name="terms" required>
+        <label for="terms">I accept the <a href="#">Terms and Conditions</a>.</label>
+      </div>
+      <div class="checkbox-container">
+        <input type="checkbox" id="cookies" name="cookies" required>
+        <label for="cookies">I accept the <a href="https://www.example.com/cookie-policy">Cookie Policy</a>.</label>
+      </div>
       <input type="submit" value="Sign Up">
     </form>
   </div>
 </div>
 
-<script src="form.js"></script>
+<script src="script.js"></script>
 
 </body>
 </html>
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
 
+<div id="myModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>Sign Up</h2>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required><br><br>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required><br><br>
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required><br><br>
+      <label for="confirm-password">Confirm Password:</label>
+      <input type="password" id="confirm-password" name="confirm-password" required><br><br>
+      <div class="checkbox-container">
+        <input type="checkbox" id="terms" name="terms" required>
+        <label for="terms">I accept the <a href="#">Terms and Conditions</a>.</label>
+      </div>
+      <div class="checkbox-container">
+        <input type="checkbox" id="cookies" name="cookies" required>
+        <label for="cookies">I accept the <a href="https://www.example.com/cookie-policy">Cookie Policy</a>.</label>
+      </div>
+      <input type="submit" value="Sign Up">
+    </form>
+  </div>
+</div>
 
+<script src="script.js"></script>
 
+</body>
+</html>
